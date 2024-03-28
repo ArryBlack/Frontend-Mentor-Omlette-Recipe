@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Recipe page</title>
+ 
+  <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: "Outfit", sans-serif;
+        
+      }
+      .nutmeg-accent{
+        color: hsl(14, 45%, 36%);
+      }
+      .dark-raspberry-accent{
+        color: hsl(332, 51%, 32%);
+      }
+      .rose-white-accent{
+        color: hsl(330, 100%, 98%);
+      }
+      .eggshell-accent{
+        color: hsl(30, 54%, 90%);
+      }
+      .light-grey-accent{
+        color: hsl(30, 18%, 87%);
+      }
+      .wenge-brown-accent{
+        color: hsl(30, 10%, 34%);
+      }
+      .dark-charcoal-accent{
+        color: hsl(24, 5%, 18%);
+      }
+
+      .container{
+      width: 80%;
+      margin: 0 auto;
+    }
+      .cover__image{
+   
+      width: 100%;
+    }
+    .cover__image img{
+      width: 100%;
+    }
+      .container{
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .young-serif{
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+    li{
+      margin-left: 1em;
+      margin-bottom: 0.75em;
+    }
+    section{
+      margin: 2em 0;
+    }
+    #prep_time{
+      margin-left: 1em;
+    }
+    span{
+      padding: 0.5em;
+    }
+    .nutritional_value{
+      font-weight: 700;
+      color: hsl(14, 45%, 36%);
+    }
+    hr{
+      color: hsl(330, 100%, 98%);
+    }
+    .recipe-container{
+      background-color: hsl(330, 100%, 98%);
+      height: 100%;
+      border: 2px solid black;
+          }
+  
+   td{
+    padding: 0.325em 2em;
+    
+    
+   }
+   
+   td,table{
+    border: 1px solid black;
+   }
+      
+    /*dekstop-view*/
+    @media (min-width:600px) {
+      body{
+        background-color: rgb(252, 227, 230);
+      }
+      .recipe-container{
+        max-width: 600px;
+        margin: 0 auto;
+       
+        border-radius: 20px;
+
+      }
+      .cover__image{
+        padding: 2em;
+      }
+      img{
+        border-radius: 20px;
+      }
+      main{
+      padding: 5em;
+    }
+      
+    }
+    
+  </style>
+</head>
+<body>
+
+  <main>
+  <div class="recipe-container">
+    <div class="cover__image">
+      <img src="assets/images/image-omelette.jpeg" alt="" >
+    </div>
+    
+  <div class="container">
+    <section id="intro">
+      <h1 class="intro_heading young-serif">Simple Omlette Recipe</h1>
+      <br>
+      <p class="intro_description wenge-brown-accent">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </section>
+    <section id="prep_time">
+      <h3 class="prep_heading dark-raspberry-accent">Preparation Time</h3>
+      <br>
+      <ul class="prep_list wenge-brown-accent">
+      <li>  <strong>Total:</strong> Approximately 10 minutes
+      </li>
+      <li> <strong>Preparation:</strong> 5 minutes
+      </li>
+      <li><strong>Cooking:</strong> 5 minutes
+      </li>
+    </ul>
+    </section>
+    <section id="ingredients">
+     
+      <h2 class="ingredients_heading young-serif nutmeg-accent">Ingredients</h2>
+      <br>
+    <ul class="ingredients_list wenge-brown-accent">
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste
+      </li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+    <br>
+    <hr>
+    </section>
+    
+    
+    <section id="instructions">
+      <h2 class="instructions_heading young-serif nutmeg-accent">Instructions</h2>
+      <br>
+      <ol class="instructions_steps wenge-brown-accent">
+        <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.</li>
+        <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+       <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+      <br>
+      <hr>
+
+    </section>
+   
+      
+      <section id="nutrition">
+        <h2 class="nutrition_heading young-serif nutmeg-accent">Nutrition</h2>
+        <br>
+        <p class="nutrition_description wenge-brown-accent"> The table below shows nutritional values per serving without the additional fillings. </p>
+        <br>
+        <div class="nutrition_table">
+        <table>
+          <tr>
+            <td  class="wenge-brown-accent">Calories</td>
+            <td  class="nutritional_value">277kcal</td>
+            
+          </tr>
+          
+        
+          <tr>
+            <td  class="wenge-brown-accent">Carbs</td>
+            <td  class="nutritional_value">0</td>
+            
+          </tr>
+          
+          <tr>
+            <td  class="wenge-brown-accent">Protein</td>
+            <td  class="nutritional_value">20g</td>
+            
+          </tr>
+          
+          
+          <tr>
+            <td  class="wenge-brown-accent">Fat</td>
+            <td  class="nutritional_value">22g</td>
+            
+          </tr>
+          
+          
+          
+          
+       
+
+          
+          
+         
+            
+        </table>
+          
+          
+          
+
+          
+          
+          
+        
+        </div>
+      </section>
+    </div>
+  </div>  
+  
+  </main>
+  
+  
+</body>
+</html>
